@@ -25,8 +25,8 @@ exports.collection = [];
  */
 
 function validator(name, fn) {
-  if (1 === arguments.length) return exports.collection[name]
-
+  if (undefined === fn) return exports.collection[name];
+  
   exports.collection[name] = fn;
   exports.collection.push(fn);
   exports.emit('define', name, fn);
