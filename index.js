@@ -31,6 +31,8 @@ function validator(name, fn) {
   exports.collection[name] = fn;
   exports.collection.push(fn);
   exports.emit('define', name, fn);
+  
+  return fn;
 }
 
 /**
