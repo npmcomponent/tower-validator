@@ -5,10 +5,15 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "tower-emitter": "*",
-    "indexof": "*"
+    "tower/emitter": "*",
+    "component/indexof": "*"
   },
+  "local": [],
+  "paths": [
+    "../"
+  ],
   "development": {
+    "component/assert": "*",
     "visionmedia/mocha": "*"
   },
   "scripts": ["index.js", "lib/validators.js"],

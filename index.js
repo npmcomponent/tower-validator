@@ -66,10 +66,15 @@ exports.ns = function(ns){
  */
 
 exports.clear = function(){
+  var collection = exports.collection;
+
   exports.off('define');
-  // XXX: instead of creating a new array,
-  // it should just set length to zero (and clear keys).
-  exports.collection = [];
+  for (key in collection) {
+    if (collection.hasOwnProperty(key)) {
+      delete collection[key];
+    }
+  }
+  collection.length = 0;
   return exports;
 }
 
