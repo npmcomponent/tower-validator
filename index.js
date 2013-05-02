@@ -3,7 +3,8 @@
  * Module dependencies.
  */
 
-var Emitter = require('tower-emitter');
+var Emitter = require('tower-emitter')
+  , validators = require('./lib/validators');
 
 /**
  * Expose `validator`.
@@ -26,7 +27,7 @@ exports.collection = [];
 
 function validator(name, fn) {
   if (undefined === fn) return exports.collection[name];
-  
+
   exports.collection[name] = fn;
   exports.collection.push(fn);
   exports.emit('define', name, fn);
@@ -69,3 +70,5 @@ exports.clear = function(){
   exports.collection = [];
   return exports;
 }
+
+validators(exports);

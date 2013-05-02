@@ -14,15 +14,15 @@ describe('validator', function(){
       calls.push(name);
     });
     
-    validator('eq', function eq(a, b){
+    validator('random', function random(a, b){
       return a === b;
     });
 
     assert(1 === validator.collection.length);
-    assert(true === validator.has('eq'));
-    assert(false === validator.has('neq'));
+    assert(true === validator.has('random'));
+    assert(false === validator.has('random2'));
     assert(1 === calls.length);
-    assert('eq' === calls[0]);
+    assert('random' === calls[0]);
   });
 
   it('should scope to a namespace', function(){
@@ -34,14 +34,14 @@ describe('validator', function(){
       calls.push(name);
     });
     
-    attrValidator('eq', function eq(a, b){
+    attrValidator('random', function eq(a, b){
       return a === b;
     });
 
     assert(1 === validator.collection.length);
-    assert(true === validator.has('attr.eq'));
-    assert(false === validator.has('eq'));
+    assert(true === validator.has('attr.random'));
+    assert(false === validator.has('random'));
     assert(1 === calls.length);
-    assert('attr.eq' === calls[0]);
+    assert('attr.random' === calls[0]);
   });
 });

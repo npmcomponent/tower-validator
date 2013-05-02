@@ -10,6 +10,6 @@
   "development": {
     "visionmedia/mocha": "*"
   },
-  "scripts": ["index.js"],
+  "scripts": ["index.js", "lib/validators.js"],
   "license": "MIT"
 }
