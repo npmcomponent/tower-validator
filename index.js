@@ -69,7 +69,7 @@ exports.clear = function(){
   var collection = exports.collection;
 
   exports.off('define');
-  for (key in collection) {
+  for (var key in collection) {
     if (collection.hasOwnProperty(key)) {
       delete collection[key];
     }
