@@ -5,17 +5,17 @@
   "version": "0.0.1",
   "keywords": [],
   "dependencies": {
-    "tower/emitter": "*",
-    "component/indexof": "*"
+    "component/indexof": "*",
+    "tower/emitter": "*"
   },
-  "local": [],
-  "paths": [
-    "../"
-  ],
   "development": {
     "component/assert": "*",
     "visionmedia/mocha": "*"
   },
-  "scripts": ["index.js", "lib/validators.js"],
+  "scripts": [
+    "index.js",
+    "lib/validators.js"
+  ],
+  "main": "index.js",
   "license": "MIT"
 }
