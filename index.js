@@ -3,8 +3,8 @@
  * Module dependencies.
  */
 
-var Emitter = require('tower-emitter')
-  , validators = require('./lib/validators');
+var Emitter = require('tower-emitter');
+var validators = require('./lib/validators');
 
 /**
  * Expose `validator`.
@@ -49,7 +49,7 @@ Emitter(exports);
 
 exports.has = function(name){
   return !!exports.collection[name];
-}
+};
 
 /**
  * Scope validators to a namespace.
@@ -59,7 +59,7 @@ exports.ns = function(ns){
   return function validator(name, fn) {
     return exports(ns + '.' + name, fn);
   }
-}
+};
 
 /**
  * Remove all validators.
@@ -76,6 +76,6 @@ exports.clear = function(){
   }
   collection.length = 0;
   return exports;
-}
+};
 
 validators(exports);
