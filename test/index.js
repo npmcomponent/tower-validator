@@ -1,10 +1,13 @@
-var validator = 'undefined' == typeof window
-    ? require('..')
-    : require('tower-validator')
-  , assert = require('assert');
+
+if ('undefined' === typeof window) {
+  var validator = require('..');
+  var assert = require('assert');
+} else {
+  var validator = require('tower-validator');
+  var assert = require('timoxley-assert');
+}
 
 describe('validator', function(){
-
   describe('property other than clear', function(){
     beforeEach(validator.clear);
 

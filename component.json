@@ -9,7 +9,7 @@
     "tower/emitter": "*"
   },
   "development": {
-    "component/assert": "*",
+    "timoxley/assert": "*",
     "visionmedia/mocha": "*"
   },
   "scripts": [
