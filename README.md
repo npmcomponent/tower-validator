@@ -1,5 +1,7 @@
 # Tower Validator
 
+Minimal, extensible validation component.
+
 ## Installation
 
 node.js:
