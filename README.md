@@ -16,6 +16,28 @@ browser:
 $ component install tower-validator
 ```
 
+## Examples
+
+```js
+var validator = require('tower-validator');
+
+validator('eq', function eq(a, b){
+  return a === b;
+});
+
+validator('neq', function neq(a, b){
+  return a !== b;
+});
+
+validator('gte', function gte(a, b){
+  return a >= b;
+});
+
+validator('gt', function gte(a, b){
+  return a > b;
+});
+```
+
 ## Testing
 
 Install testem:

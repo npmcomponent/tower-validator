@@ -2,7 +2,7 @@
   "name": "tower-validator",
   "repo": "tower/validator",
   "description": "Tower Validator component",
-  "version": "0.0.1",
+  "version": "0.5.0pre",
   "keywords": [],
   "dependencies": {
     "component/indexof": "*",
