@@ -21,8 +21,10 @@ exports.collection = [];
 /**
  * Get or set a validator function.
  *
- * @param {String} name
- * @param {Function} [fn]
+ * @param {String} name Validator name.
+ * @param {Function} fn Validator function.
+ * @return {Function} Validator function.
+ * @api public
  */
 
 function validator(name, fn) {
@@ -44,7 +46,9 @@ Emitter(exports);
 /**
  * Check if validator exists.
  *
- * @param {String} name
+ * @param {String} name Validator name.
+ * @return {Boolean} true if the validator exists in the current list of validators, else false.
+ * @api public
  */
 
 exports.has = function(name){
@@ -53,6 +57,10 @@ exports.has = function(name){
 
 /**
  * Scope validators to a namespace.
+ *
+ * @param {String} ns A namespace.
+ * @return {Function} Function to get or set a validator under a namespace.
+ * @api public
  */
 
 exports.ns = function(ns){
@@ -63,6 +71,10 @@ exports.ns = function(ns){
 
 /**
  * Remove all validators.
+ *
+ * @chainable
+ * @return {Function} exports The main `validator` function.
+ * @api public
  */
 
 exports.clear = function(){
