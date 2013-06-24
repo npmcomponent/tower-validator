@@ -1,9 +1,14 @@
 {
   "name": "tower-validator",
-  "version": "0.1.0pre",
+  "version": "0.1.0",
+  "keywords": ["orm", "validation", "forms", "html"],
   "main": "./index.js",
   "dependencies": {
-    "tower-emitter": "~0.1.0pre",
+    "tower-emitter": "~0.1.0",
     "indexof": "*"
+  },
+  "repository": {
+    "type" : "git",
+    "url" : "http://github.com/tower/validator.git"
   }
 }
