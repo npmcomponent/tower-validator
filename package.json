@@ -4,7 +4,7 @@
   "keywords": ["orm", "validation", "forms", "html"],
   "main": "./index.js",
   "dependencies": {
-    "tower-emitter": "~0.1.0",
+    "tower-emitter": "*",
     "indexof": "*"
   },
   "repository": {
