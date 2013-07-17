@@ -1,10 +1,10 @@
 {
   "name": "tower-validator",
-  "version": "0.1.0",
+  "version": "0.1.2",
   "keywords": ["orm", "validation", "forms", "html"],
   "main": "./index.js",
   "dependencies": {
-    "tower-emitter": "*",
+    "tower-emitter": "0.1.2",
     "indexof": "*"
   },
   "repository": {

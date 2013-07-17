@@ -6,7 +6,7 @@
   "keywords": [],
   "dependencies": {
     "component/indexof": "*",
-    "tower/emitter": "0.1.0"
+    "tower/emitter": "0.1.2"
   },
   "development": {
     "timoxley/assert": "*",
