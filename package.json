@@ -1,14 +1,12 @@
 {
   "name": "tower-validator",
+  "description": "Tower Validator component",
   "version": "0.1.2",
-  "keywords": ["orm", "validation", "forms", "html"],
-  "main": "./index.js",
+  "keywords": [],
+  "main": "index.js",
   "dependencies": {
-    "tower-emitter": "0.1.2",
-    "indexof": "*"
+    "component-indexof": "git://github.com/npmcomponent/component-indexof.git",
+    "tower-emitter": "git://github.com/npmcomponent/tower-emitter.git"
   },
-  "repository": {
-    "type" : "git",
-    "url" : "http://github.com/tower/validator.git"
-  }
+  "license": "MIT"
 }

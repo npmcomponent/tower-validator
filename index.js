@@ -3,7 +3,7 @@
  * Module dependencies.
  */
 
-var Emitter = require('tower-emitter');
+// commented out by npm-component: var Emitter = require('tower-emitter');
 var validators = require('./lib/validators');
 
 /**
